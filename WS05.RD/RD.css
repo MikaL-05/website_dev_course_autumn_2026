@@ -1,0 +1,165 @@
+
+/* Basic styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f3f8;
+    color: #333333;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #263b50;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Navigation bar */
+
+.responsive-nav {
+    background-color: #526d82;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+
+.responsive-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.responsive-nav a:hover {
+    color: #ffd166;
+}
+
+/* Hide mobile menu button on large screens */
+
+.menu-checkbox {
+    display: none;
+}
+
+.menu-button {
+    display: none;
+}
+
+/* Main content */
+
+main {
+    margin-top: 25px;
+}
+
+h2 {
+    color: #263b50;
+}
+
+/* Responsive columns */
+
+.responsive-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    border-left: 5px solid #526d82;
+}
+
+/* Responsive image */
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Media query box */
+
+.media-query-box {
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Smaller screens */
+
+@media (max-width: 600px) {
+
+    /* Columns become one column */
+
+    .column {
+        flex: 100%;
+    }
+
+    /* Background changes */
+
+    .media-query-box {
+        background-color: lightcoral;
+    }
+
+    /* Hide navigation links */
+
+    .responsive-nav .nav-list {
+        display: none;
+        flex-direction: column;
+    }
+
+    /* Show menu button */
+
+    .menu-button {
+        display: block;
+        color: white;
+        background-color: #263b50;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: fit-content;
+    }
+
+    /* Show links when menu is clicked */
+
+    .menu-checkbox:checked ~ .nav-list {
+        display: flex;
+    }
+
+}
+
+/* Larger screens */
+
+@media (min-width: 601px) {
+
+    .media-query-box {
+        background-color: lightblue;
+    }
+
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 25px;
+    background-color: #263b50;
+    color: white;
+    border-radius: 8px;
+}

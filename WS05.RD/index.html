@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <link rel="stylesheet" href="RD.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>A simple responsive webpage</p>
+    </header>
+
+    <!-- Navigation -->
+
+    <nav class="responsive-nav">
+
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+        <label for="menu-toggle" class="menu-button">
+            ☰ Menu
+        </label>
+
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Main content -->
+
+    <main>
+
+        <h2 id="about">About</h2>
+
+        <!-- Two responsive columns -->
+
+        <div class="responsive-container">
+
+            <div class="column">
+                <h3>First Section</h3>
+                <p>This is the first section of the webpage.</p>
+            </div>
+
+            <div class="column">
+                <h3>Second Section</h3>
+                <p>This is the second section of the webpage.</p>
+            </div>
+
+        </div>
+
+        <!-- Image -->
+
+        <h2 id="gallery">Gallery</h2>
+
+        <p>Here is an image:</p>
+
+        <img src="./images/Parrot.jpeg"
+             alt="My image"
+             class="responsive-image">
+
+        <!-- Media query -->
+
+        <h2 id="contact">Contact</h2>
+
+        <div class="media-query-box">
+            Resize the browser window to see the background change!
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>Copyright 2026</p>
+    </footer>
+
+</body>
+
+</html>
